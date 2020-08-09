@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
-    <link rel="icon" type="image/png" href="favicon.png">
+    <title>Infinite Scroll</title>
+    <link rel="icon" href="favicon.ico">
     
-    <!-- Old Favicon - Grab Icon From Google (Might be unsupported in the future) -->
-    <!-- <link rel="icon" type="image/png" href="https://s2.googleusercontent.com/s2/favicons?domain=jacinto.design"> -->
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Script -->
+    <main id="content">
+        <h1>Unsplash API - Infinite Scroll</h1>
+
+        <div id="error">The free limit of the Unsplash API has been hit, try again later...</div>
+
+        <div id="image-container"></div>
+
+        <img id="loader" src="loader.svg" alt="Loading...">
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>
