@@ -40,7 +40,7 @@ function displayPhotos(photos) {
         const link = document.createElement('a')
         link.setAttribute('href', photo.links.html)
         link.setAttribute('target', '_blank')
-        link.setAttribute('style', `grid-row: span ${rowSpan};`)
+        link.setAttribute('class', `row-span-${rowSpan}`)
 
         const image = document.createElement('img')
         image.setAttribute('src', photo.urls.small)
